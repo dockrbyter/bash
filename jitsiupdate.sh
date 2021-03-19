@@ -1,6 +1,10 @@
 #!/bin/bash
 
 # jitsiupdate.sh
+#
+#   Updates und Design-Wiederherstellung fuer Jitsi-Server. Benoetigt entsprechende Dateien im
+#   Verzeichnis /home/media.
+#
 # https://github.com/thelamescriptkiddiemax/bash
 #----------------------------------------------------------------------------------------------------
 
