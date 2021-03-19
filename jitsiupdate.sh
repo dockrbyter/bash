@@ -17,7 +17,7 @@ echo "   Jitsi-Server Update-Script"
 
 # Updates
 echo "   System- & Jitsi-Update"
-apt update -qq
+apt update -qq -y
 apt upgrade -qq -y
 
 # all.css anpassen
