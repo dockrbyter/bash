@@ -2,6 +2,11 @@
 
 # jitsiupdate.sh
 # https://github.com/thelamescriptkiddiemax/bash
+#----------------------------------------------------------------------------------------------------
+
+userhome=$(eval echo ~$user)
+
+#----------------------------------------------------------------------------------------------------
 
 # Begruessung
 echo "   Jitsi-Server Update-Script"
@@ -17,11 +22,11 @@ cat c/media/blueprint.css >> /usr/share/jitsi-meet/css/all.css
 
 # main-de.json wiederherstellen
 echo "   Sprachanpassungen..."
-cp -f /home/webconadmin/media/main-de.json /usr/share/jitsi-meet/lang/main-de.json
+cp -f $userhome/media/main-de.json /usr/share/jitsi-meet/lang/main-de.json
 
 # favicon wiederherstellen
 echo "   Favicon anpassen..."
-cp -f /home/webconadmin/media/favicon.ico /usr/share/jitsi-meet/images/favicon.ico
+cp -f $userhome/media/favicon.ico /usr/share/jitsi-meet/images/favicon.ico
 
 # Dienste neustarten
 echo "   Dienste Neustarten..."
