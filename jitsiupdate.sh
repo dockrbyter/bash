@@ -22,7 +22,7 @@ apt upgrade -qq -y
 
 # all.css anpassen
 echo "   CSS Modifikationen..."
-cat c/media/blueprint.css >> /usr/share/jitsi-meet/css/all.css
+cat $userhome/media/blueprint.css >> /usr/share/jitsi-meet/css/all.css
 
 # main-de.json wiederherstellen
 echo "   Sprachanpassungen..."
